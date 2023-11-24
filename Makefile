@@ -6,11 +6,11 @@
 #    By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/24 14:22:06 by bebrandt          #+#    #+#              #
-#    Updated: 2023/11/24 21:18:40 by bebrandt         ###   ########.fr        #
+#    Updated: 2023/11/24 21:39:31 by bebrandt         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	=	days
+NAME	=	solve_day
 
 SRCS	=	day-01.c day-02.c day-03.c day-04.c day-05.c day-06.c day-07.c \
 				day-08.c day-09.c day-10.c day-11.c day-12.c day-13.c day-14.c \
