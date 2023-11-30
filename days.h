@@ -6,7 +6,7 @@
 /*   By: bebrandt <benoit.brandt@proton.me>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/24 19:48:16 by bebrandt          #+#    #+#             */
-/*   Updated: 2023/11/24 20:03:13 by bebrandt         ###   ########.fr       */
+/*   Updated: 2023/11/30 19:49:32 by bebrandt         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define DAYS_H
 
 # include "libft/libft.h"
+# include "libft/get_next_line.h"
 # include "printf/ft_printf.h"
 
 void	day_01(void);
@@ -41,5 +42,31 @@ void	day_22(void);
 void	day_23(void);
 void	day_24(void);
 void	day_25(void);
+
+//get input function
+
+t_list	*from_txt_to_struct_of_int(int fd);
+t_list	*from_txt_to_struct_of_str(int fd);
+int		*from_txt_to_array_of_int(int fd, int size);
+char	**from_txt_to_array_of_str(int fd, int size);
+int		count_line(int fd);
+
+//daily function
+
+void	*copy(void *content);
+int		power_of_two(int n);
+
+// safe free function
+
+void	del(void *content);
+void	free_array(char **array, int size);
+
+// error function
+
+int		file_not_exist(void);
+
+// display function
+
+void	display_struct(t_list *lst, char data);
 
 #endif
